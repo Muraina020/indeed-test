@@ -1,9 +1,9 @@
 import React from 'react'
-import payapp1 from "../src/Images/payapp1.png"
-import payapp2 from "../src/Images/payapp2.png"
-import red from "../src/Images/red.png"
-import man from "../src/Images/man.png"
-import Union from "../src/Images/Union.png"
+import payapp1 from "../Images/payapp1.png"
+import payapp2 from "..//Images/payapp2.png"
+import red from "../Images/red.png"
+import Man2 from "../Images/Man2.png"
+import Union from "../Images/Union.png"
 
 
 
@@ -44,9 +44,9 @@ const Man = () => {
             <div className='absolute h-[350px] w-[350px] z-10'>
                  <img src={red} />
             </div>
-            <div className='absolute h-[350px] w-[330px] left-[15px] top-[px] z-20'>
+            <div className='absolute h-[450px] w-[330px] left-[15px] top-[22px] z-10'>
               
-           <img src={man} />
+           <img src={Man2} />
             </div>
         </div>
     </div>

@@ -2,12 +2,13 @@ import React from 'react'
 import payapp1 from "../../src/Images/payapp1.png"
 import payapp2 from "../../src/Images/payapp2.png"
 import Ellipse1 from "../Images/Ellipse1.png"
-import Dashboard from './Dashboard'
+import HeaderChat from './HeaderChat'
+import Dashbd from '../Images/Dashbd.png'
 
 
 const Header = () => {
   return (
-    <div className='grid grid-cols-2 gap-8 '>
+    <div className='grid grid-cols-2 gap-5'>
         <div className='flex flex-col gap-3'>
         <span className='text-5xl text-black font-bold'>Run your payroll <h3 className='text-5xl font-bold text-gray-500 py-[10px]'> easily <span className='text-5xl font-bold text-black'>in</span><span className='text-5xl text-red-700 font-bold'> seconds</span> </h3> </span>
         <p className='text-[20px]'>We've built an all in-clusive simple solution for individual and businesses to manage staff, pay salaries, bills, and relevant taxes all at once</p>
@@ -34,27 +35,12 @@ const Header = () => {
         </div>
         </div>
   
-          
-        <div className=' h-[200px] relative w-[20%]'>
-            <div className='absolute h-[550px] w-[450px]'>
-            <img src={Ellipse1}/>
+   
+            <div className=' h-[350px] w-[650px] '>
+            <img src={Dashbd}/>
             </div>
-            <div className='absolute w-[5%] h-[5%] mb-[100px]'>
-         
-            </div>
-      
-
-
-
-
-         
-          
-         
-         
-        </div>
-     
-       
-    </div>
+        
+     </div>
   )
 }
 
