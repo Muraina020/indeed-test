@@ -8,7 +8,7 @@ import Dashbd from '../Images/Dashbd.png'
 
 const Header = () => {
   return (
-    <div className='grid grid-cols-2 gap-5'>
+    <div className='grid md:grid-cols-2 gap-5'>
         <div className='flex flex-col gap-3'>
         <span className='text-5xl text-black font-bold'>Run your payroll <h3 className='text-5xl font-bold text-gray-500 py-[10px]'> easily <span className='text-5xl font-bold text-black'>in</span><span className='text-5xl text-red-700 font-bold'> seconds</span> </h3> </span>
         <p className='text-[20px]'>We've built an all in-clusive simple solution for individual and businesses to manage staff, pay salaries, bills, and relevant taxes all at once</p>
@@ -35,8 +35,7 @@ const Header = () => {
         </div>
         </div>
   
-   
-            <div className=' h-[350px] w-[650px] '>
+          <div className='hidden md:block flex-row h-[350px] w-[650px] '>
             <img src={Dashbd}/>
             </div>
         

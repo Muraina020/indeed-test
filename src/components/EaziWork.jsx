@@ -6,20 +6,20 @@ import Mask2 from "../../src/Images/Mask2.png"
 
 const EaziWork = () => {
   return (
-    <div className='flex flex-col ml-15'>
+    <div className='flex flex-col md:ml-10'>
         <h1 className='text-4xl text-green-900 font-bold text-center'>How Eazipay Works</h1>
         <p className='py-2 text-[18px] text-center text-gray-500'>Get started in 3 simple steps.</p>
-        <div className='grid grid-cols-2 ml-20 mt-20 h-[600px]'>
-        <div className=' h-[400px] relative ml-20 mt-12 '>
-            <div className='absolute h-[550px] w-[450px]'>
+        <div className='grid md:grid-cols-2 md:ml-10 mt-20 h-[600px]'>
+        <div className='h-[300px] md:h-[400px] relative md:ml-15 mt-12'>
+            <div className='absolute h-[550px] w-[400px] md:w-[450px]'>
                 <img src={BG} />
             </div>
-            <div className='absolute h-[200px] w-[270px] left-[90px] top-[-30px] z-10'>
+            <div className='absolute h-[200px] w-[270px] left-[60px] md:left-[90px] top-[-70px] md:top-[-30px] z-10'>
                 <img src={phone1} />
             </div>
         </div>
       
-            <div className='flex flex-col relative ml-12 '>
+            <div className='hidden md:flex flex-col relative ml-12 '>
 
                 <div className='h-[20px] mr-2 mt-[7px] absolute left-[-50px] '>
                 <img src={Mask3}/>

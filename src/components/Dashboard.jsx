@@ -20,12 +20,13 @@ import azi from "../Images/azi.png"
 
 
 
+
 const Dashboard = () => {
   return (
-    <div className='w-screen h-full relative px-[25%]'>
+    <div className='w-[300px] md:w-screen h-full relative px-6 md:px-[25%]'>
         
 
-        <div className="self-stretch flex flex-col items-start justify-start gap-[48px]">
+        <div className="w-[300px] md:w-full self-stretch flex flex-col items-start justify-start gap-[15px] md:gap-[48px]">
 
           <div className="self-stretch flex flex-col items-start justify-start gap-[40px]">
 
@@ -42,7 +43,7 @@ const Dashboard = () => {
 
             <div className="flex flex-row items-start justify-start gap-[48px] text-white">
               <div className="flex flex-col items-start justify-start gap-[48px]">
-                <div className="flex-1 rounded-3xl bg-green-900 shadow-inner w-[770px] overflow-hidden flex flex-col py-[31px] px-8 items-start justify-center relative gap-[10px] border-[1px] border-solid border-gray-500">
+                <div className="flex-1 rounded-3xl bg-green-900 shadow-inner w-[300px] md:w-[770px] overflow-hidden flex flex-col py-[31px] md:px-8 items-start justify-center relative gap-[10px] border-[1px] border-solid border-gray-500">
 
                   <div className="self-stretch flex flex-row items-end justify-between z-[0]">
                     <div className="flex flex-col items-start justify-start gap-[8px]">
@@ -352,11 +353,340 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+
+            
+
+
+        <div className="w-[1006px] h-[894px] flex flex-col items-start justify-start gap-[24px] text-13xl">
+          <div className="relative leading-[40px] font-medium">
+            Recent Activities
+          </div>
+          <div className="self-stretch h-12 flex flex-row items-center justify-start gap-[16px] text-sm text-eazipay-typo-neutral-lighten-2">
+            <div className="flex-1 rounded-2xl bg-old-styles-white-color overflow-hidden flex flex-row py-0 pr-0 pl-8 items-center justify-between border-[1px] border-solid border-new-styles-text-body-light">
+              <div className="relative tracking-[0.25px] leading-[16px]">
+                Search employee
+              </div>
+              <div className="rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-new-styles-primary-mint w-[102px] flex flex-row py-3 px-8 box-border items-center justify-center">
+                <img
+                  className="relative w-6 h-6 overflow-hidden shrink-0"
+                  alt=""
+                  src="/user-interface--magnifier1.svg"
+                />
+              </div>
+            </div>
+            <div className="self-stretch rounded-2xl bg-old-styles-white-color hidden flex-row py-2.5 px-4 items-center justify-start gap-[16px] text-old-styles-light-text-color border-[1px] border-solid border-new-styles-text-body-normal">
+              <div className="flex flex-row items-start justify-start gap-[8px]">
+                <div className="relative tracking-[-0.02em] leading-[14px] font-medium">
+                  Year 2022
+                </div>
+                <img
+                  className="relative w-4 h-4"
+                  alt=""
+                  src="/iconsbasicarrowdown-2.svg"
+                />
+              </div>
+              <div className="relative tracking-[-0.02em] leading-[14px] font-medium text-darkslategray hidden">
+                All
+              </div>
+            </div>
+            <div className="self-stretch rounded-2xl bg-old-styles-white-color flex flex-row py-2.5 px-4 items-center justify-start gap-[16px] text-new-styles-text-body-normal border-[1px] border-solid border-new-styles-text-body-light">
+              <div className="flex flex-row items-start justify-start gap-[8px]">
+                <img
+                  className="relative w-4 h-4 overflow-hidden shrink-0"
+                  alt=""
+                  src="/multimedia--equalizer2.svg"
+                />
+                <div className="relative tracking-[-0.02em] leading-[14px] font-medium">
+                  Filter
+                </div>
+              </div>
+              <div className="relative tracking-[-0.02em] leading-[14px] font-medium text-darkslategray hidden">
+                All
+              </div>
+            </div>
+            <div className="rounded-3xl bg-new-styles-primary-eazi-green hidden flex-row py-3 px-7 items-center justify-center text-base text-old-styles-white-color">
+              <div className="relative leading-[24px] font-medium">
+                Send Payslip(s)
+              </div>
+            </div>
+          </div>
+          <div className="self-stretch rounded-[20px] bg-whitesmoke h-[752px] overflow-hidden shrink-0 flex flex-row py-0 pr-0 pl-6 box-border items-center justify-between text-xs text-new-styles-text-body-normal">
+            <div className="h-[716px] overflow-y-auto flex flex-col items-start justify-start gap-[12px]">
+              <div className="w-[952.94px] flex flex-row pt-6 px-0 pb-2 box-border items-center justify-start text-sm text-darkslategray">
+                <div className="h-[26px] flex flex-row py-4 px-0 box-border items-center justify-center text-lg text-new-styles-text-body-dark">
+                  <div className="relative leading-[24px] font-medium">
+                    Wednesday, November 09, 2022
+                  </div>
+                </div>
+                <div className="w-[72px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">TIME</b>
+                </div>
+                <div className="w-60 h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="flex-1 relative leading-[16px]">DESCRIPTION</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">CREDIT</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">DEBIT</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">BALANCE</b>
+                </div>
+              </div>
+              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+                <div className="relative leading-[16px]">PAYROLL</div>
+                <div className="flex flex-row items-start justify-start gap-[100px]">
+                  <div className="h-[62px] flex flex-col items-start justify-end text-old-styles-light-text-color">
+                    <div className="relative hidden">USER</div>
+                    <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color">
+                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium">BM</div>
+                      </div>
+                      <div className="relative leading-[24px] font-medium text-new-styles-text-body-dark">
+                        Badmus Kemis
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[238px] flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">ACTIVITY</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        Paid November 2022 salary
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[125px] flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">EMPLOYEE</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        52
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">TIME</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        16:15
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+                <div className="relative leading-[16px]">
+                  EMPLOYEE MANAGEMENT
+                </div>
+                <div className="flex flex-row items-start justify-start gap-[100px]">
+                  <div className="h-[62px] flex flex-col items-start justify-end text-old-styles-light-text-color">
+                    <div className="relative hidden">USER</div>
+                    <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color font-roboto">
+                      <div className="rounded-81xl w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center bg-[url(/public/frame-861@3x.png)] bg-cover bg-no-repeat bg-[top]">
+                        <div className="relative font-medium hidden">KA</div>
+                      </div>
+                      <div className="relative leading-[24px] font-medium font-old-body-small-medium text-new-styles-text-body-dark">
+                        Kalu Abasiama
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[238px] flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">ACTIVITY</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        Added new employee
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">EMPLOYEE</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        04
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[952.94px] flex flex-row pt-8 px-0 pb-2 box-border items-center justify-start text-sm text-darkslategray">
+                <div className="h-[26px] flex flex-row py-4 px-0 box-border items-center justify-center text-lg text-new-styles-text-body-dark">
+                  <div className="relative leading-[24px] font-medium">
+                    Friday, November 04, 2022
+                  </div>
+                </div>
+                <div className="w-[72px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">TIME</b>
+                </div>
+                <div className="w-60 h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="flex-1 relative leading-[16px]">DESCRIPTION</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">CREDIT</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">DEBIT</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">BALANCE</b>
+                </div>
+              </div>
+              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+                <div className="relative leading-[16px]">BONUS</div>
+                <div className="flex flex-row items-start justify-start gap-[100px] text-old-styles-light-text-color">
+                  <div className="w-[174px] h-[62px] flex flex-col items-start justify-end">
+                    <div className="relative hidden">USER</div>
+                    <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color font-roboto">
+                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium">BM</div>
+                      </div>
+                      <div className="relative leading-[24px] font-medium font-old-body-small-medium text-new-styles-text-body-dark">
+                        Badmus Kemis
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[238px] flex flex-col items-start justify-start text-new-styles-text-body-normal">
+                    <div className="relative leading-[16px]">ACTIVITY</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        Added new bonus
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-start font-roboto">
+                    <div className="relative">BONUS NAME</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark font-old-body-small-medium">
+                      <div className="relative leading-[24px] font-medium">
+                        XMAS Bonus
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+                <div className="relative leading-[16px]">WALLET</div>
+                <div className="flex flex-row items-start justify-start gap-[100px]">
+                  <div className="w-[174px] h-[62px] flex flex-col items-start justify-end text-old-styles-light-text-color">
+                    <div className="relative hidden">USER</div>
+                    <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color font-roboto">
+                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium">BM</div>
+                      </div>
+                      <div className="relative leading-[24px] font-medium font-old-body-small-medium text-new-styles-text-body-dark">
+                        Badmus Kemis
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[238px] flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">ACTIVITY</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        Paid November 2022, salary
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">AMOUNT</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-secondary-strawberry">
+                      <div className="relative leading-[24px] font-medium">
+                        N11,1678,900.00
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hidden flex-col items-start justify-start text-old-styles-light-text-color font-roboto">
+                    <div className="relative">BALANCE</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-darkslategray">
+                      <div className="relative font-medium">N12,786,987.98</div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-start">
+                    <div className="relative leading-[16px]">TIME</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-text-body-dark">
+                      <div className="relative leading-[24px] font-medium">
+                        15:31
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[952.94px] flex flex-row pt-8 px-0 pb-2 box-border items-center justify-start text-sm text-darkslategray">
+                <div className="h-[26px] flex flex-row py-4 px-0 box-border items-center justify-center text-lg text-new-styles-text-body-dark">
+                  <div className="relative leading-[24px] font-medium">
+                    Monday, October 30, 2022
+                  </div>
+                </div>
+                <div className="w-[72px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">TIME</b>
+                </div>
+                <div className="w-60 h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="flex-1 relative leading-[16px]">DESCRIPTION</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">CREDIT</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">DEBIT</b>
+                </div>
+                <div className="w-[140px] h-[26px] hidden flex-row p-4 box-border items-center justify-start">
+                  <b className="relative leading-[16px]">BALANCE</b>
+                </div>
+              </div>
+              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] text-old-styles-light-text-color border-[1px] border-solid border-new-styles-grays-outline">
+                <div className="relative">PAYROLL</div>
+                <div className="flex flex-row items-start justify-start gap-[100px]">
+                  <div className="h-[62px] flex flex-col items-start justify-end">
+                    <div className="relative hidden">USER</div>
+                    <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color">
+                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium">BM</div>
+                      </div>
+                      <div className="relative font-medium text-darkslategray">
+                        Badmus Kemis
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[238px] flex flex-col items-start justify-start">
+                    <div className="relative">ACTIVITY</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-darkslategray">
+                      <div className="relative font-medium">
+                        Paid XMAS bonus
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[125px] flex flex-col items-start justify-start">
+                    <div className="relative">EMPLOYEE</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-darkslategray">
+                      <div className="relative font-medium">52</div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-start">
+                    <div className="relative">TIME</div>
+                    <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-darkslategray">
+                      <div className="relative font-medium">10:15</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-new-styles-grays-gray shadow-[1px_0px_1px_#bec4c8] w-4 h-[613px] flex flex-col py-1 px-0 box-border items-center justify-between">
+              <div className="w-3 flex flex-col items-center justify-start gap-[8px]">
+                {/* <img
+                  className="relative w-[6.93px] h-1.5"
+                  alt=""
+                  src="/polygon-21.svg"
+                /> */}
+                <div className="self-stretch relative rounded-lg bg-new-styles-text-body-normal h-[268px]" />
+              </div>
+              <img className="relative w-2 h-2" alt="" src="/polygon-31.svg" />
+            </div>
+          </div>
+        </div>
+
+ 
         </div>
 
         
 
-      <div className="absolute top-[0px] left-[0px] bg-white w-[272px] h-[1024px] overflow-hidden text-new-styles-text-body-dark">
+      <div className="hidden md:block absolute top-[0px] left-[0px] bg-white w-[272px] h-[1024px] overflow-hidden text-new-styles-text-body-dark">
         <img
           className="absolute top-[0px] left-[0px] w-[318.28px] h-[150.7px]"
           alt=""

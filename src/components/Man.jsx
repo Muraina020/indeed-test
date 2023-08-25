@@ -11,8 +11,8 @@ import Union from "../Images/Union.png"
 
 const Man = () => {
   return (
-    <div className='grid grid-cols-2  ml-20 justify-center items-center'>
-        <div className='flex flex-col gap-2 ml-20'>
+    <div className='grid md:grid-cols-2 md:ml-20 justify-center items-center p-3 md:px-0'>
+        <div className='flex flex-col gap-2 md:ml-20'>
             <h1 className='text-5xl text-black font-bold'>Forever for your <h3 className='text-5xl font-bold text-red-500'>salary payment</h3></h1>
           
 
@@ -37,7 +37,7 @@ const Man = () => {
         </div>
         </div>
 
-        <div className=' h-[400px] relative ml-20 mt-12'>
+        <div className=' h-[400px] relative md:ml-20 mt-12'>
             <div className='absolute h-[350px] w-[350px] left-[10px] top-[-10px]'>
             <img src={Union} />
             </div>
