@@ -16,6 +16,12 @@ import setting from "../Images/setting.png"
 import call from "../Images/call.png"
 import book from "../Images/book.png"
 import azi from "../Images/azi.png"
+import logo from "../Images/logo.png"
+import woman from "../Images/woman.png"
+import not from "../Images/not.png"
+import {CiSearch} from "react-icons/ci"
+import {TbChartCandle} from "react-icons/tb"
+
 
 
 
@@ -23,10 +29,31 @@ import azi from "../Images/azi.png"
 
 const Dashboard = () => {
   return (
-    <div className='w-[300px] md:w-screen h-full relative px-6 md:px-[25%]'>
+    <div className='w-[400px] md:w-[90%] h-full relative px-20 md:mx-[15%]'>
+
+<div className='w-[400px] md:w-[100%] flex gap-[30px] md:justify-between md:h-20 bg-white md:px-[20px] py-4 md:items-center'>
+        <div className='flex gap-4'>
+          <div className='w-[120px] h-[90px] pt-[10px]'>
+          <img src={logo} />
+          </div>
+       </div>
+       <div className='flex gap-[15px] md:gap-[20px]'>
+        <div className='w-[40px] h-[40px]'>
+        <img src={not} />
+        </div>
+       <div className='flex fle-row gap-[5px]'>
+       <img src={woman} />
+       <span className='flex flex-col gap[5px]'>
+        <h2 className='font-bold text-xl'>Kalu Abasiama</h2>
+        <span>Admn</span>
+       </span>
+       </div>
+       </div>
+      
+    </div>
         
 
-        <div className="w-[300px] md:w-full self-stretch flex flex-col items-start justify-start gap-[15px] md:gap-[48px]">
+        <div className="w-[300px] md:w-full self-stretch flex flex-col items-start justify-start gap-[15px] md:gap-[48px] mt-20 ml-[6%]">
 
           <div className="self-stretch flex flex-col items-start justify-start gap-[40px]">
 
@@ -82,7 +109,8 @@ const Dashboard = () => {
 
 
                 <div className="self-stretch rounded-3xl flex flex-row items-center justify-start gap-[32px] text-center text-sm text-zinc-500">
-                  <div className="flex-1 rounded-3xl bg-white shadow-inner flex flex-col py-4 px-6 items-center justify-start gap-[16px] border-[1px] border-solid border-gray-300">
+                 
+                  <div className="md:flex-1 rounded-3xl bg-white shadow-inner flex flex-col py-4 md:px-6 items-center justify-start gap-[16px] border-[1px] border-solid border-gray-300">
                     <img
                       className="relative rounded-xl w-12 h-12 bg-red-50 p-[10]"
                       alt=""
@@ -102,6 +130,8 @@ const Dashboard = () => {
                       Pay Salaries
                     </div>
                   </div>
+                  
+                
                   <div className="flex-1 rounded-3xl bg-white shadow-inner flex flex-col py-4 px-6 items-center justify-start gap-[16px] border-[1px] border-solid border-zinc-300">
                     <img
                       className="relative rounded-xl w-12 h-12"
@@ -122,12 +152,13 @@ const Dashboard = () => {
                       Quick Loan
                     </div>
                   </div>
+               
                 </div>
               </div>
 
-              <div className="self-stretch rounded-3xl bg-white shadow-zinc-300 box-border w-[190px] overflow-hidden shrink-0 flex flex-col pt-0 px-4 pb-4 items-center justify-between text-center text-new-styles-text-body-dark border-[1px] border-solid border-zinc-300">
+              <div className="hidden self-stretch rounded-3xl bg-white shadow-zinc-300 box-border w-[190px] overflow-hidden shrink-0 md:flex flex-col pt-0 px-4 pb-4 items-center justify-between text-center text-new-styles-text-body-dark border-[1px] border-solid border-zinc-300">
               
-              <div className="rounded-2xl w-[188px] flex flex-col items-center justify-start">
+              <div className="rounded-2xl w-[188px] md:flex flex-col items-center justify-start">
                   <div className="self-stretch rounded-t-2xl rounded-b-none bg-green-300 shadow-transparent flex flex-row py-2 px-9 items-center justify-center">
                     <b className="relative leading-[24px]">Next Payroll</b>
                   </div>
@@ -188,7 +219,7 @@ const Dashboard = () => {
             </div>
 
           </div>
-          <div className="rounded-3xl box-border w-[1006px] flex flex-col items-center justify-center text-base text-black border-[1px] border-solid border-inner">
+          <div className="hidden rounded-3xl box-border w-[1006px] md:flex flex-col items-center justify-center text-base text-black border-[1px] border-solid border-inner">
             <div className="self-stretch rounded-2xl bg-white shadow-transparent flex flex-col p-12 items-center justify-center relative gap-[9px]">
 
               <div className="self-stretch h-[77px] flex flex-row items-start justify-between z-[0]">
@@ -261,7 +292,7 @@ const Dashboard = () => {
                     <div className="absolute top-[-0.5px] left-[-0.5px] bg-zinc-500 box-border w-px h-56 border-r-[1px] border-solid border" />
                     <div className="absolute top-[222.5px] left-[-0.5px] bg-new-styles-text-body-normal box-border w-[676px] h-px border-t-[1px] border-solid border-new-styles-grays-outline" />
                     <div className="absolute top-[168.5px] left-[-0.5px] box-border w-[676px] h-px border-t-[1px] border-solid border-new-styles-grays-gray" />
-                    <div className="absolute top-[121.5px] left-[-0.5px] box-border w-[676px] h-px border-t-[1px] border-solid bo" />
+                    <div className="absolute top-[121.5px] left-[-0.5px] box-border w-[676px] h-px border-t-[1px] border-solid" />
                     <div className="absolute top-[74.5px] left-[-0.5px] box-border w-[676px] h-px border-t-[1px] border-solid border-new-styles-grays-gray" />
                     <div className="absolute top-[27.5px] left-[-0.5px] box-border w-[676px] h-px border-t-[1px] border-solid border-new-styles-grays-gray" />
 
@@ -354,24 +385,24 @@ const Dashboard = () => {
             </div>
           </div>
 
-            
 
 
-        <div className="w-[1006px] h-[894px] flex flex-col items-start justify-start gap-[24px] text-13xl">
+            {/* Recent Activities */}
+
+
+        <div className="w-[400px] md:w-[1006px] h-[894px] flex flex-col items-start justify-start gap-[24px] text-13xl">
           <div className="relative leading-[40px] font-medium">
             Recent Activities
           </div>
           <div className="self-stretch h-12 flex flex-row items-center justify-start gap-[16px] text-sm text-eazipay-typo-neutral-lighten-2">
-            <div className="flex-1 rounded-2xl bg-old-styles-white-color overflow-hidden flex flex-row py-0 pr-0 pl-8 items-center justify-between border-[1px] border-solid border-new-styles-text-body-light">
+            <div className="flex-1 rounded-2xl bg-white overflow-hidden flex flex-row py-0 pr-0 pl-8 items-center justify-between border-[1px] border-solid border-new-styles-text-body-light">
               <div className="relative tracking-[0.25px] leading-[16px]">
                 Search employee
               </div>
-              <div className="rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-new-styles-primary-mint w-[102px] flex flex-row py-3 px-8 box-border items-center justify-center">
-                <img
-                  className="relative w-6 h-6 overflow-hidden shrink-0"
-                  alt=""
-                  src="/user-interface--magnifier1.svg"
-                />
+              <div className="rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-green-100 w-[102px] flex flex-row py-3 px-8 box-border items-center justify-center">
+                <h3 className="text-[25px]">
+                <CiSearch/>
+                </h3 >
               </div>
             </div>
             <div className="self-stretch rounded-2xl bg-old-styles-white-color hidden flex-row py-2.5 px-4 items-center justify-start gap-[16px] text-old-styles-light-text-color border-[1px] border-solid border-new-styles-text-body-normal">
@@ -389,13 +420,11 @@ const Dashboard = () => {
                 All
               </div>
             </div>
-            <div className="self-stretch rounded-2xl bg-old-styles-white-color flex flex-row py-2.5 px-4 items-center justify-start gap-[16px] text-new-styles-text-body-normal border-[1px] border-solid border-new-styles-text-body-light">
+            <div className="self-stretch rounded-2xl bg-white flex flex-row py-2.5 px-4 items-center justify-start gap-[16px] text-new-styles-text-body-normal border-[1px] border-solid border-new-styles-text-body-light">
               <div className="flex flex-row items-start justify-start gap-[8px]">
-                <img
-                  className="relative w-4 h-4 overflow-hidden shrink-0"
-                  alt=""
-                  src="/multimedia--equalizer2.svg"
-                />
+                 <h3 className='text-[px]'>
+                  <TbChartCandle/>
+                 </h3>
                 <div className="relative tracking-[-0.02em] leading-[14px] font-medium">
                   Filter
                 </div>
@@ -434,14 +463,15 @@ const Dashboard = () => {
                   <b className="relative leading-[16px]">BALANCE</b>
                 </div>
               </div>
-              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+
+              <div className="rounded-2xl bg-white shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
                 <div className="relative leading-[16px]">PAYROLL</div>
                 <div className="flex flex-row items-start justify-start gap-[100px]">
                   <div className="h-[62px] flex flex-col items-start justify-end text-old-styles-light-text-color">
                     <div className="relative hidden">USER</div>
                     <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color">
-                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
-                        <div className="relative font-medium">BM</div>
+                      <div className="rounded-full bg-green-300 w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium text-white">BM</div>
                       </div>
                       <div className="relative leading-[24px] font-medium text-new-styles-text-body-dark">
                         Badmus Kemis
@@ -474,7 +504,8 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+
+              <div className="rounded-2xl bg-white shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
                 <div className="relative leading-[16px]">
                   EMPLOYEE MANAGEMENT
                 </div>
@@ -508,6 +539,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
+
               <div className="w-[952.94px] flex flex-row pt-8 px-0 pb-2 box-border items-center justify-start text-sm text-darkslategray">
                 <div className="h-[26px] flex flex-row py-4 px-0 box-border items-center justify-center text-lg text-new-styles-text-body-dark">
                   <div className="relative leading-[24px] font-medium">
@@ -530,14 +562,14 @@ const Dashboard = () => {
                   <b className="relative leading-[16px]">BALANCE</b>
                 </div>
               </div>
-              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+              <div className="rounded-2xl bg-white shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
                 <div className="relative leading-[16px]">BONUS</div>
                 <div className="flex flex-row items-start justify-start gap-[100px] text-old-styles-light-text-color">
                   <div className="w-[174px] h-[62px] flex flex-col items-start justify-end">
                     <div className="relative hidden">USER</div>
                     <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color font-roboto">
-                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
-                        <div className="relative font-medium">BM</div>
+                      <div className="rounded-full bg-green-300 w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium text-white">BM</div>
                       </div>
                       <div className="relative leading-[24px] font-medium font-old-body-small-medium text-new-styles-text-body-dark">
                         Badmus Kemis
@@ -562,14 +594,15 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
+
+              <div className="rounded-2xl bg-white shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] border-[1px] border-solid border-new-styles-grays-outline">
                 <div className="relative leading-[16px]">WALLET</div>
                 <div className="flex flex-row items-start justify-start gap-[100px]">
                   <div className="w-[174px] h-[62px] flex flex-col items-start justify-end text-old-styles-light-text-color">
                     <div className="relative hidden">USER</div>
                     <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color font-roboto">
-                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
-                        <div className="relative font-medium">BM</div>
+                      <div className="rounded-full bg-green-300 w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium text-white">BM</div>
                       </div>
                       <div className="relative leading-[24px] font-medium font-old-body-small-medium text-new-styles-text-body-dark">
                         Badmus Kemis
@@ -587,7 +620,7 @@ const Dashboard = () => {
                   <div className="flex flex-col items-start justify-start">
                     <div className="relative leading-[16px]">AMOUNT</div>
                     <div className="h-12 flex flex-row py-2.5 px-0 box-border items-center justify-start text-base text-new-styles-secondary-strawberry">
-                      <div className="relative leading-[24px] font-medium">
+                      <div className="relative leading-[24px] font-medium text-red-400">
                         N11,1678,900.00
                       </div>
                     </div>
@@ -608,6 +641,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
+
               <div className="w-[952.94px] flex flex-row pt-8 px-0 pb-2 box-border items-center justify-start text-sm text-darkslategray">
                 <div className="h-[26px] flex flex-row py-4 px-0 box-border items-center justify-center text-lg text-new-styles-text-body-dark">
                   <div className="relative leading-[24px] font-medium">
@@ -630,14 +664,14 @@ const Dashboard = () => {
                   <b className="relative leading-[16px]">BALANCE</b>
                 </div>
               </div>
-              <div className="rounded-2xl bg-old-styles-white-color shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] text-old-styles-light-text-color border-[1px] border-solid border-new-styles-grays-outline">
+              <div className="rounded-2xl bg-white shadow-[0px_9px_18px_rgba(170,_170,_170,_0.15)] box-border w-[1033px] flex flex-col py-2 px-12 items-start justify-start gap-[8px] text-old-styles-light-text-color border-[1px] border-solid border-new-styles-grays-outline">
                 <div className="relative">PAYROLL</div>
                 <div className="flex flex-row items-start justify-start gap-[100px]">
                   <div className="h-[62px] flex flex-col items-start justify-end">
                     <div className="relative hidden">USER</div>
                     <div className="h-12 flex flex-row py-0 pr-4 pl-0 box-border items-center justify-start gap-[10px] text-base text-old-styles-white-color">
-                      <div className="rounded-81xl bg-old-styles-part-paid w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
-                        <div className="relative font-medium">BM</div>
+                      <div className="rounded-full bg-green-300 w-10 h-10 flex flex-col py-2.5 px-[7px] box-border items-center justify-center">
+                        <div className="relative font-medium text-white">BM</div>
                       </div>
                       <div className="relative font-medium text-darkslategray">
                         Badmus Kemis
@@ -686,7 +720,13 @@ const Dashboard = () => {
 
         
 
-      <div className="hidden md:block absolute top-[0px] left-[0px] bg-white w-[272px] h-[1024px] overflow-hidden text-new-styles-text-body-dark">
+        {/* Side Bar */}
+
+
+
+
+
+      <div className="hidden md:block absolute top-[0px] left-[-15%] bg-white w-[272px] h-[1024px] overflow-hidden text-new-styles-text-body-dark">
         <img
           className="absolute top-[0px] left-[0px] w-[318.28px] h-[150.7px]"
           alt=""
