@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='flex gap-[80px] md:justify-between md:h-20 bg-white md:px-20 py-6 md:items-center'>
         <div className='flex gap-4'>
           <div>
-       <img src={Frame1} />
+       <img src={Frame1}/>
        </div>
        <ul className='hidden md:flex gap-4 text-green-900 text-semibold text-[18px]'>
         <li>Individual</li>
